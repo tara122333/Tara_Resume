@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Heebo:wght@500&family=Lato:ital,wght@0,400;1,300&family=Open+Sans:wght@500&family=Roboto:ital@0;1&family=Ubuntu:wght@400;500;700&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 1250px;
+    height: 1160px;
+    display: block;
+    margin: 0px auto;
+    border: 2px solid black;
+}
+#container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* left-box */
+
+
+#left-box{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(5, 40, 70, 0.904);
+    color: #ffffff;
+}
+/* Head */
+
+#left-box .head{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* height: 100px; */
+}
+
+#left-box .head .myimg img{
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    display: block;
+    margin: 12px auto;
+}
+#left-box .head .myname{
+    display: flex;
+    flex-direction: column;
+}
+#left-box .head .myname h1{
+    font-size: 30px;
+    display: block;
+    margin: 8px auto;
+    font-family: 'Varela Round', sans-serif;
+}
+#left-box .head .myname p{
+    font-size: 23px;
+    display: block;
+    margin: 0px auto 12px auto;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* Contact information */
+
+.con-tit{
+    display: block;
+    margin: 12px auto;
+}
+.con-tit h1{
+    font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+}
+.con-detail{
+    display: flex;
+    flex-direction: row;
+    padding: 8px 22px; 
+}
+.con-detail .con-logo{
+    font-size: 20px;
+    /* margin: 15px; */
+    margin: 0px 15px 6px 2px;
+}
+
+.con-detail a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+}
+.con-detail a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Education Information */
+.edu-detail{
+    padding: 8px 22px;
+}
+.edu-detail p{
+    color: blue;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* Language */
+.lan-set{
+    padding: 8px 22px;
+}
+
+.lan-set .lan-seek{
+    position: relative;
+    /* border: 2px solid red; */
+    height: 13px;
+    width: 100%;
+    margin: 6px 4px 12px 4px;
+    display: flex;
+    align-items: center;
+}
+.lan-set .lan-seek::before{
+    content: "";
+    position: absolute;
+    /* top: ; */
+    width: 100%;
+    height: 8px;
+    background: #b5b5b58c;
+}
+.wid-hindi-lan::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: animhindi 2s forwards ease-in-out;
+}
+.wid-english-lan::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: animenglish 2s forwards ease-in-out;
+    animation-delay: 1.9s;
+}
+@keyframes animhindi{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes animenglish{
+    100%{
+        width: 60%;
+    }
+}
+/* right-box */
+
+
+#right-box{
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+}
+.right-box h1{
+    color: darkblue;
+    margin: 8px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.right-box .skills-txt p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.rbox-skills{
+    display: flex;
+    width: 100%;
+    margin: 12px 0px;
+}
+
+.skills-txt{
+    width: 25%;
+    margin-right: 30px;
+    margin-top: 16px;
+}
+
+.skills-txt-details{
+    width: 75%;
+}
+.skills-txt-details h2{
+    color: darkblue;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.skills-seek{
+    position: relative;
+    height: 13px;
+    width: 100%;
+    margin: 18px 4px 12px 4px;
+    display: flex;
+    align-items: center;
+}
+.skills-seek{
+    content: "";
+    position: relative;
+    /* top: ; */
+    width: 100%;
+    height: 8px;
+    background: #b5b5b58c;
+}
+
+.skills-seek1::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek1 2s forwards ease-in-out;
+}
+.skills-seek2::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek2 2s forwards ease-in-out;
+    animation-delay: 1.9s;
+}
+.skills-seek3::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek3 1.5s forwards ease-in-out;
+    animation-delay: 3.9s;
+}
+.skills-seek4::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek4 1s forwards ease-in-out;
+    animation-delay: 5.4s;
+}
+.skills-seek5::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek5 2s forwards ease-in-out;
+    animation-delay: 6.4s;
+}
+@keyframes seek1{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes seek2{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes seek3{
+    100%{
+        width: 60%;
+    }
+}
+@keyframes seek4{
+    100%{
+        width: 50%;
+    }
+}
+@keyframes seek5{
+    100%{
+        width: 95%;
+    }
+}
+
+.interest-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.interest-item{
+    display: flex;
+    width: 100%;
+    margin: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+.interest-item .i-logo{
+    /* margin: 12px; */
+}
+.interest-item .i-logo i{
+    padding: 15px;
+    background: rgb(108, 122, 146);
+    font-size: 32px;
+    border-radius: 63px;
+    color: rgb(2, 252, 23);
+}
+
+.i-sub p{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin: 12px;
+}
+
+
+/* Utility Class */
+.all-head{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
