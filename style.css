@@ -7,7 +7,7 @@
 }
 .box{
     width: 1250px;
-    height: 1160px;
+    height: 1300px;
     display: block;
     margin: 0px auto;
     border: 2px solid black;
@@ -184,7 +184,7 @@
 .rbox-skills{
     display: flex;
     width: 100%;
-    margin: 12px 0px;
+    margin: 4px 0px;
 }
 
 .skills-txt{
@@ -254,8 +254,8 @@
     height: 13px;
     width: 0;
     border-radius: 23px;
-    animation: seek4 1s forwards ease-in-out;
-    animation-delay: 5.4s;
+    animation: seek4 2s forwards ease-in-out;
+    animation-delay: 10.2s;
 }
 .skills-seek5::after{
     content: "";
@@ -265,7 +265,77 @@
     width: 0;
     border-radius: 23px;
     animation: seek5 2s forwards ease-in-out;
-    animation-delay: 6.4s;
+    animation-delay: 16s;
+}
+.skills-seek6::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek6 2s forwards ease-in-out;
+    animation-delay: 5.4s;
+}
+.skills-seek7::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek7 2s forwards ease-in-out;
+    animation-delay: 7.1s;
+}
+.skills-seek8::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek8 2s forwards ease-in-out;
+    animation-delay: 8.6s;
+}
+.skills-seek9::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek9 2s forwards ease-in-out;
+    animation-delay: 12s;
+}
+.skills-seek10::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek10 2s forwards ease-in-out;
+    animation-delay: 14s;
+}
+.skills-seek11::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek11 1s forwards ease-in-out;
+    animation-delay: 18.4s;
+}
+.skills-seek12::after{
+    content: "";
+    position: absolute;
+    background : linear-gradient(90deg,#fecfc8,#fe818a);
+    height: 13px;
+    width: 0;
+    border-radius: 23px;
+    animation: seek12 1s forwards ease-in-out;
+    animation-delay: 19s;
 }
 @keyframes seek1{
     100%{
@@ -284,12 +354,47 @@
 }
 @keyframes seek4{
     100%{
-        width: 50%;
+        width: 80%;
     }
 }
 @keyframes seek5{
     100%{
         width: 95%;
+    }
+}
+@keyframes seek6{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes seek7{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes seek8{
+    100%{
+        width: 52%;
+    }
+}
+@keyframes seek9{
+    100%{
+        width: 89%;
+    }
+}
+@keyframes seek10{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes seek11{
+    100%{
+        width: 40%;
+    }
+}
+@keyframes seek12{
+    100%{
+        width: 30%;
     }
 }
 
@@ -331,4 +436,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
 }
